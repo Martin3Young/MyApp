@@ -1,6 +1,8 @@
 # MyApp
 practice
+<br>
 this app include three functions:
-1:CombineLatestActivity
-2:DiyActivity
+<br>
+1:CombineLatestActivity<br>
+2:DiyActivity<br>
 3:SlidingConflictActivity
