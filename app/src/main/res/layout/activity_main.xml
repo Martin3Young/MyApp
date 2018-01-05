@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="yunfucloud.com.myapp.MainActivity">
+
+
+    <Button
+        android:id="@+id/combineLatest"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="RxJava处理复杂表单验证"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/slidingconflict"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="滑动冲突"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/diy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="自定义view"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="测试"
+        android:gravity="center"/>
+
+</LinearLayout>
