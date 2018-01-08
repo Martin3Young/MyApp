@@ -42,7 +42,7 @@ public class CombineLatestActivity extends AppCompatActivity {
         Observable.combineLatest(ObservableEmail, ObservablePhone, new Func2<CharSequence, CharSequence, Boolean>() {
             @Override
             public Boolean call(CharSequence email, CharSequence phone) {
-                return MyUtil.isEmailValid(email.toString()) && MyUtil.isPhone(phone.toString());
+                return MyUtil.isEmailValid(email.toString())&&MyUtil.isPhone(phone.toString());
             }
         }).subscribe(new Subscriber<Boolean>() {
             @Override

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+    <yunfucloud.com.myapp.view.RulerView
+        android:id="@+id/ruler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="8dp"
+        app:isScaleGradient="false"
+        app:mBottomLineColor="#E0E0E0"
+        app:mBottomLineWidth="1.5dp"
+        app:mMaxScaleColor="#E0E0E0"
+        app:mMaxScaleHeightRatio="0.3"
+        app:mMaxScaleWidth="2dp"
+        app:mMidScaleColor="#E0E0E0"
+        app:mMidScaleHeightRatio="0.2"
+        app:mMidScaleWidth="1.5dp"
+        app:mMiddleImg="@mipmap/icon_arrow"
+        app:mMinScaleColor="#E0E0E0"
+        app:mMinScaleHeightRatio="0.1"
+        app:mMinScaleWidth="1.5dp"
+        app:mMinValue="100"
+        app:mScaleBase="10"
+        app:mScaleSpace="10dp"
+        app:mScaleValueSize="12sp"
+        />
+
+</LinearLayout>

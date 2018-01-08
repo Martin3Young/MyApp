@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button mSlidingConflict;
     Button diy;
     Button test;
+    Button ruler;
     long lastTime;
 
     @Override
@@ -23,10 +24,12 @@ public class MainActivity extends AppCompatActivity {
         mCombineLatest = (Button) findViewById(R.id.combineLatest);
         mSlidingConflict = (Button) findViewById(R.id.slidingconflict);
         diy = (Button) findViewById(R.id.diy);
+        ruler = (Button) findViewById(R.id.ruler);
         test = (Button) findViewById(R.id.test);
         mCombineLatest.setOnClickListener(new ButtonListener());
         mSlidingConflict.setOnClickListener(new ButtonListener());
         diy.setOnClickListener(new ButtonListener());
+        ruler.setOnClickListener(new ButtonListener());
         test.setOnClickListener(new ButtonListener());
     }
 
@@ -47,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
                     //自定义view
                     Intent diy = new Intent(MainActivity.this,DiyActivity.class);
                     startActivity(diy);
+                    break;
+                case R.id.ruler:
+                    Intent ruler = new Intent(MainActivity.this,RulerActivity.class);
+                    startActivity(ruler);
                     break;
                 case R.id.test:
                     Intent test = new Intent(MainActivity.this,TestActivity.class);
