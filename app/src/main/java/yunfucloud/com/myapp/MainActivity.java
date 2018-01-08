@@ -8,11 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import yunfucloud.com.myapp.activity.CombineLatestActivity;
-import yunfucloud.com.myapp.activity.DiyActivity;
-import yunfucloud.com.myapp.activity.RulerActivity;
-import yunfucloud.com.myapp.activity.SlidingConflictActivity;
-
 public class MainActivity extends AppCompatActivity {
 
     Button mCombineLatest;
@@ -57,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(diy);
                     break;
                 case R.id.ruler:
-                    //滚动获取值
                     Intent ruler = new Intent(MainActivity.this,RulerActivity.class);
                     startActivity(ruler);
                     break;
