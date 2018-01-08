@@ -1,4 +1,4 @@
-package yunfucloud.com.myapp;
+package yunfucloud.com.myapp.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,6 +12,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
+import yunfucloud.com.myapp.R;
 import yunfucloud.com.myapp.adapter.ListViewAdapter;
 import yunfucloud.com.myapp.adapter.ViewPagerAdapter;
 import yunfucloud.com.myapp.view.BottomScrollView;

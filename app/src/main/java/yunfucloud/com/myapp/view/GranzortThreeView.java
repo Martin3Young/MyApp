@@ -273,5 +273,10 @@ public class GranzortThreeView extends View {
         paint.setShadowLayer(15, 0, 0, Color.WHITE);//白色光影效果
     }
 
+    public void resetView(){
+        mCurrentState = State.CIRCLE_STATE;
+        valueAnimator.start();
+    }
+
 }
 

@@ -16,11 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".CombineLatestActivity"/>
-        <activity android:name=".SlidingConflictActivity"/>
-        <activity android:name=".DiyActivity"/>
+        <activity android:name=".activity.CombineLatestActivity"/>
+        <activity android:name=".activity.SlidingConflictActivity"/>
+        <activity android:name=".activity.DiyActivity"/>
         <activity android:name=".TestActivity"/>
-        <activity android:name=".RulerActivity"/>
+        <activity android:name=".activity.RulerActivity"/>
 
 
 
