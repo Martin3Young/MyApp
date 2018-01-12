@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SwipeMenuExpandableListView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/determine_chekbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="4dp"
+            android:gravity="center"
+            android:minHeight="38dp"
+            android:minWidth="12dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_source_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/determine_chekbox"
+            android:drawablePadding="10dp"
+            android:text="xxxx年"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -4,7 +4,7 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              tools:context=".DiyActivity">
+              tools:context=".activity.DiyActivity">
 
     <yunfucloud.com.myapp.view.GranzortThreeView
         android:layout_width="match_parent"

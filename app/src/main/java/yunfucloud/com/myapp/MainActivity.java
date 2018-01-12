@@ -8,6 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import yunfucloud.com.myapp.activity.CombineLatestActivity;
+import yunfucloud.com.myapp.activity.DiyActivity;
+import yunfucloud.com.myapp.activity.RulerActivity;
+import yunfucloud.com.myapp.activity.ShoppingCarActivity;
+import yunfucloud.com.myapp.activity.SlidingConflictActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     Button mCombineLatest;
@@ -15,27 +21,39 @@ public class MainActivity extends AppCompatActivity {
     Button diy;
     Button test;
     Button ruler;
+    Button shoppingCar;
     long lastTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initView();
+        initListener();
+    }
+
+    private void initListener() {
+        ButtonListener listener = new ButtonListener();
+        mCombineLatest.setOnClickListener(listener);
+        mSlidingConflict.setOnClickListener(listener);
+        diy.setOnClickListener(listener);
+        ruler.setOnClickListener(listener);
+        test.setOnClickListener(listener);
+        shoppingCar.setOnClickListener(listener);
+    }
+
+    private void initView() {
         mCombineLatest = (Button) findViewById(R.id.combineLatest);
         mSlidingConflict = (Button) findViewById(R.id.slidingconflict);
         diy = (Button) findViewById(R.id.diy);
         ruler = (Button) findViewById(R.id.ruler);
         test = (Button) findViewById(R.id.test);
-        mCombineLatest.setOnClickListener(new ButtonListener());
-        mSlidingConflict.setOnClickListener(new ButtonListener());
-        diy.setOnClickListener(new ButtonListener());
-        ruler.setOnClickListener(new ButtonListener());
-        test.setOnClickListener(new ButtonListener());
+        shoppingCar = (Button) findViewById(R.id.shopping_car);
     }
 
     private class ButtonListener implements View.OnClickListener {
         public void onClick(View v) {
-            switch(v.getId()){
+                switch(v.getId()){
                 case R.id.combineLatest:
                     //复杂表单验证
                     Intent combineLatest = new Intent(MainActivity.this,CombineLatestActivity.class);
@@ -58,6 +76,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.test:
                     Intent test = new Intent(MainActivity.this,TestActivity.class);
                     startActivity(test);
+                    break;
+                case R.id.shopping_car:
+                    Intent shoppingcar = new Intent(MainActivity.this,ShoppingCarActivity.class);
+                    startActivity(shoppingcar);
                     break;
             }
         }

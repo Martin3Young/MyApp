@@ -1,11 +1,10 @@
-package yunfucloud.com.myapp;
+package yunfucloud.com.myapp.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
-import yunfucloud.com.myapp.view.GranzortThreeView;
+import yunfucloud.com.myapp.R;
 
 /**
  * Created by jingjing on 2017/11/30.

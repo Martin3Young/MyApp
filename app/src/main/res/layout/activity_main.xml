@@ -34,6 +34,12 @@
         android:text="量尺view"
         android:gravity="center"/>
     <Button
+        android:id="@+id/shopping_car"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="购物车view"
+        android:gravity="center"/>
+    <Button
         android:id="@+id/test"
         android:layout_width="match_parent"
         android:layout_height="40dp"

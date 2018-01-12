@@ -1,4 +1,4 @@
-package yunfucloud.com.myapp;
+package yunfucloud.com.myapp.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,6 +13,7 @@ import com.jakewharton.rxbinding.widget.RxTextView;
 import rx.Observable;
 import rx.Subscriber;
 import rx.functions.Func2;
+import yunfucloud.com.myapp.R;
 import yunfucloud.com.myapp.utils.MyUtil;
 
 /**
