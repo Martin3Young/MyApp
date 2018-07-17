@@ -7,6 +7,7 @@
               tools:context=".activity.DiyActivity">
 
     <yunfucloud.com.myapp.view.GranzortThreeView
+        android:id="@+id/my_view"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         tools:layout_editor_absoluteY="8dp"
